@@ -1,0 +1,112 @@
+body { 
+    font-family: Arial, sans-serif; 
+    margin: 20px; 
+    background-image: url('c:\Users\admin\Desktop\resturant website\images\4k-food-fancy-food-plating-y48pwsir6u6w5iws.jpg'); 
+    background-size: cover; 
+    background-attachment: fixed;
+    color: white;
+}
+header { 
+    background: rgba(0, 0, 0, 0.7); 
+    padding: 20px; 
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+}
+nav ul { 
+    list-style-type: none; 
+    padding: 0; 
+    display: flex;
+    justify-content: center;
+}
+nav ul li { 
+    margin: 0 15px; 
+}
+nav ul li a { 
+    color: white; 
+    text-decoration: none; 
+    font-weight: bold;
+}
+nav ul li a:hover {
+    color: #ffd700;
+    text-decoration: underline;
+}
+section { 
+    margin: 20px 0; 
+    padding: 20px; 
+    background: rgba(0, 0, 0, 0.6); 
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+}
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5em;
+    color: #ffd700;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2em;
+    color: #ff6347;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.highlight {
+    background-color: #ff6347;
+    color: white;
+    padding: 2px 5px;
+    border-radius: 3px;
+}
+.button:hover {
+    background-color: #ff6347;
+    color: white;
+    transform: scale(1.05);
+    transition: transform 0.3s;
+}
+.animated-text {
+    display: inline-block;
+    animation: textZoom 2s infinite;
+}
+.menu-section {
+    margin-bottom: 40px;
+}
+.menu-item {
+    margin-bottom: 20px;
+}
+.menu-item h3 {
+    margin: 10px 0 5px;
+}
+.menu-item p {
+    margin: 0 0 10px;
+}
+.menu-item .price {
+    font-weight: bold;
+    color: #27ae60;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+.menu-item:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: background-color 0.3s;
+}
+footer { 
+    padding: 10px 20px; 
+    text-align: center; 
+    background: rgba(0, 0, 0, 0.7); 
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+}
+html {
+    scroll-behavior: smooth;
+}
+@keyframes fadeIn {
+    to { opacity: 1; }
+}
+@keyframes textZoom {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
